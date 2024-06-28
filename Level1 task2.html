@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #A7FFEB;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s;
+        }
+
+        header {
+            padding:  20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1A237E;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s;
+        }
+
+        header:hover {
+            transform: translateY(-5px);
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .name {
+            color: #A7FFEB;
+            text-align: right;
+        }
+
+        .about {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 40px;
+            transition: transform 0.5s;
+        
+        }
+
+        .about:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-line {
+            width: 80%;
+            margin: 40px auto;
+            border: none;
+            height: 2px;
+            background-color: #1A237E;
+        }
+
+        .chintan {
+            width: 20%;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s;
+        }
+
+        .about_item {
+            color: #1A237E;
+            margin-left: 50px;
+        }
+
+        .about_item ul {
+            list-style-type: none;
+            padding: 0;
+            color: #A7FFEB;
+        }
+
+        .about_item ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #1A237E;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .about_item ul li:hover {
+            transform: translateY(-5px) rotateX(10deg);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            color: #1A237E;
+            padding: 40px;
+        }
+
+        .project {
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .resume {
+            text-align: center;
+            color: #1A237E;
+            margin: 50px 0;
+            transition: transform 0.5s;
+        }
+
+        .resume:hover {
+            transform: scale(1.1);
+        }
+
+        .contect_section {
+            justify-content: center;
+            text-align: center;
+            font-size: x-large;
+            color: #1A237E;
+            padding: 40px;
+        }
+
+        .contectlogo {
+            height: 35px;
+            width: auto;
+            margin: 20px;
+            transition: transform 0.5s;
+        }
+
+        .contectlogo:hover {
+            transform: rotate(360deg);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1A237E;
+            color: #A7FFEB;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="image">
+            <img src="cp logo.png" alt="logo" class="logo">
+        </div>
+        <div>
+            <h1 class="name">PATEL CHINTANKUMAR A.</h1>
+            <h3 class="name">Web Developer & Designer</h3>
+        </div>
+    </header>
+
+    <h1 style="text-align: center; color:#1A237E; font-size: xx-large; margin-top: 40px;">About me</h1>
+
+    <section class="about">
+        <img class="chintan" src="chintan photo.jpg" alt="Chintan's Photo">
+        <div class="about_item">
+            <div>
+                <h1>Skills</h1>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>XML</li>
+                    <li>JAVA</li>
+                </ul>
+            </div>
+            <div>
+                <h1>Experience</h1>
+                <p>
+                    ~ I am currently working on the Codesoft internship program.
+                </p>
+                <p>
+                    ~ I am part of the Smart India Hackathon organized by the Government of India.
+                </p>
+                <p>
+                    We built a mobile application for real-time monitoring systems to monitor multiple projects like bridges, 
+                    buildings, etc., in one display.
+                </p>
+            </div>
+        </div>
+    </section>
+    <hr class="section-line">
+
+    <h1 style="text-align: center; color:#1A237E; font-size: xx-large;">PROJECTS</h1>
+
+    <section class="projects">
+        <div class="project">
+            <h3 style="margin-bottom: 20px;">Project 1</h3>
+            <img src="project-1.jpg" alt="Project 1">
+            <p style="margin-top: 20px;">The Real-Time Dashboard Monitoring System application offers continuous tracking and
+                 analysis of infrastructure projects through real-time updates and visual analytics. 
+                 It provides a centralized view of project statuses and performance metrics, enhancing 
+                 decision-making and efficiency. This application is essential for monitoring complex projects
+                  like bridges and buildings, ensuring timely and informed management
+            </p>
+        </div>
+
+        <div class="project">
+            <h3 style="margin-bottom: 20px;">Project 2</h3>
+            <img src="project-2.png" alt="Project 2">
+            <p style="margin-top: 20px;">The Placement Cell System website streamlines the recruitment process by connecting 
+                students with potential employers through an organized platform. It offers features for
+                 job postings, applications, and scheduling interviews, ensuring efficient and transparent 
+                 placement activities. This website is essential for enhancing student employment opportunities
+                  and simplifying administrative tasks.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3 style="margin-bottom: 20px;">Project 3</h3>
+            <img src="project-3.png" alt="Project 3">
+            <p style="margin-top: 20px;">The Simple Media Player app, developed in Android Studio, offers seamless playback of 
+                audio and video files with an intuitive user interface. It supports various media formats
+                 and includes basic controls for play, pause, and skip. This app provides a straightforward
+                  and efficient media playback experience for Android users.
+            </p>
+        </div>
+    </section>
+
+    <section class="resume">
+        <h1>Download my <a href="Resume.pdf">Resume</a></h1>
+    </section>
+
+    <hr class="section-line">
+
+    <section class="contect_section">
+        <h1>Contact Information</h1>
+        <div>
+            <img class="contectlogo" src="whatsapp-logo-7.png" alt="WhatsApp">
+            <img class="contectlogo" src="linkedIn_PNG8.png" alt="LinkedIn">
+            <img class="contectlogo" src="telegram.jpeg" alt="Telegram">
+            <img class="contectlogo" src="facebook.webp" alt="Facebook">
+            <img class="contectlogo" src="git.png" alt="GitHub">
+        </div>
+        <div>
+            <h1 style="font-size: medium;">Email: <a href="mailto:patelchintankumar2003@gmail.com">patelchintankumar2003@gmail.com</a></h1>
+            <h3 style="font-size:medium"> Phone: <a href="tel:+918780665657">+91 8780665657</a></h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chintankumar A. Patel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
